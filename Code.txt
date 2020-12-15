@@ -1,0 +1,56 @@
+int ledBull=11, ledWihte=12, ledGreen=13, ledGreenCenter=10;
+int ledRedCenter=9, ledCenter=8, pip1=3, pip2=4,button=2;
+
+void setup()
+{
+  pinMode(ledBull, OUTPUT);
+  pinMode(ledWihte, OUTPUT);
+  pinMode(ledGreen, OUTPUT);
+  
+  pinMode(ledGreenCenter, OUTPUT);
+  pinMode(ledRedCenter, OUTPUT);
+  
+  pinMode(ledCenter, OUTPUT);
+  
+  pinMode(pip1, OUTPUT);
+  pinMode(pip2, OUTPUT);
+  
+  pinMode(button, INPUT_PULLUP);
+}
+int i=1;
+void loop()
+{
+  int val=digitalRead(button);  
+  if(val==LOW){
+    if(i==1)
+      test(ledBull,100);
+     else if(i==2)
+      test(ledWihte,500);
+     else if(i==3)
+      test(ledGreen,800);
+     else if(i==4)
+       test(ledGreenCenter,1200);
+     else if(i==5)
+        test(ledRedCenter,1400);
+     else if(i==6){
+     test(ledCenter,1100);
+      i=0;
+    }
+    i++;
+      
+  }
+}
+
+void test(int typeLed,int start){
+ digitalWrite(typeLed, HIGH);
+ delay(1000);
+ digitalWrite(typeLed, LOW);
+ delay(100);
+ tone(pip1,start);
+ delay(1200);
+ noTone(pip1);
+ delay(100);
+ tone(pip2,start+100);
+ delay(1200);
+ noTone(pip2);
+}
