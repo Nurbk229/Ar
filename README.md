@@ -1,11 +1,11 @@
 # Arduino-Simple
 
-->> Build the circuit as shown in the video attached below...
-->> When you press the button, the LED are lit and the distinctive sound of each LED is taken out as shown in the attached video.
-->> You should use (method and variables) to write the code... You can define method...
-*Example:
+->> Build the circuit as shown in the video attached below...<br>
+->> When you press the button, the LED are lit and the distinctive sound of each LED is taken out as shown in the attached video.<br>
+->> You should use (method and variables) to write the code... You can define method...<br>
+*Example:<br>
 void testLED(int type){
-}
+}<br>
 <a href="https://www.youtube.com/watch?v=YJatxotPYro" rel="nofollow">https://www.youtube.com/watch?v=YJatxotPYro</a> </br>
 [![Screenshot 2020-12-15 232940](https://user-images.githubusercontent.com/41232970/102275014-74c3cf80-3f2d-11eb-8701-b334f2c7adfa.png)
 ](https://www.youtube.com/watch?v=rJo002LlQAQ&ab_channel=NoorEl-Nahhal)
